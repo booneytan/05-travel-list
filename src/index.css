@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: sans-serif;
   color: #5a3e2b;
   font-family: "Quicksand";
@@ -95,7 +95,6 @@ input {
   list-style: none;
   width: 80%;
   overflow: scroll;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
@@ -129,4 +128,29 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button,
+  input {
+    font-size: 1.8rem;
+  }
+
+  .add-form {
+    flex-direction: column;
+  }
+
+  select option {
+    font-size: 5rem;
+  }
 }
